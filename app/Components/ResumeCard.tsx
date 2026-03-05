@@ -31,17 +31,17 @@ const ResumeCard = ({ resume: { id, companyName, jobTitle, feedback, imagePath }
                     <ScoreCircle score={feedback.overallScore} />
                 </div>
             </div>
-            {resumeUrl && (
-                <div className="gradient-border animate-in fade-in duration-1000">
+          
+                <div className="gradient-border ease-in-out animate-in fade-in duration-1000">
                     <div className="w-full h-full">
                         <img
-                            src={resumeUrl}
+                            src={imagePath}
                             alt="resume"
                             className="w-full h-[350px] max-sm:h-[200px] object-cover object-top"
                         />
                     </div>
                 </div>
-                )}
+         
         </Link>
     )
 }
